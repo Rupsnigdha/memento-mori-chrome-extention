@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Delirium";
+  src: url(fonts/Delirium.ttf);
+}
+
+@font-face {
+  font-family: "Old London";
+  src: url(fonts/OldLondon.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(font/Montserrat.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0% 10%;
+  background-color: #121212;
+  color: #ccc;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+header {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+  padding: 5rem;
+}
+
+.header-text {
+  font-size: 5rem;
+  font-family: "Old London", sans-serif;
+}
+.header-tagline {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 1.25rem;
+}
+
+.header-progress {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+#header-progress-value {
+  padding-right: 1rem;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+.progress-container {
+  width: 400px;
+  height: 6px;
+  background-color: #999;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+.progress-fill {
+  background-color: #121212;
+  height: 4px;
+  margin-left: 1px;
+  border-radius: 10px 0 0px 10px;
+}
+#countdown {
+  font-family: "Delirium", sans-serif;
+  font-size: 20rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.countdown-child {
+  min-width: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0;
+}
+.countdown-child-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.countdown-seconds {
+  color: red;
+}
+.quote-container {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  width: 80%;
+  line-height: 1.125;
+  text-align: center;
+}
+#quote-author {
+  margin-top: 1rem;
+  color: red;
+  font-weight: 500;
+}
+#calendar {
+  padding: 0 10dvw;
+}
+.calendar-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.calendar-cell {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: #121212;
+  border: 1px solid #444;
+  transition-duration: 1s;
+}
+.life-calendar {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+}
+#calendar {
+  margin-top: 2rem;
+  width: 60dvw;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Memento Mori Clock",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "This is your very own Memento Mori clock counting down seconds till your death",
+  "icons": {
+    "16": "./images/icon16.png",
+    "32": "./images/icon32.png",
+    "48": "./images/icon48.png",
+    "128": "./images/icon128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": ["storage"]
+}
